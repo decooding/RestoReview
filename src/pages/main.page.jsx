@@ -6,7 +6,6 @@ import MainCategory from '../constructor/Main_category'
 import MainRecomend from '../constructor/Main_recomend'
 import JurnalContainer from '../constructor/jurnalContainer'
 import TopRatingCom from '../constructor/TopRatingComment'
-import FlushExample from '../components/accordion.component'
 
 
 export default class Main extends Component {
@@ -24,8 +23,6 @@ export default class Main extends Component {
         <JurnalContainer/>
         <TextBlock value = 'Топ Рейтинг'/>
         <TopRatingCom/>
-
-        <FlushExample/>
       </div>
     )
   }

@@ -23,7 +23,8 @@ connection.query('SELECT * FROM restouran', (error, results) => {
     return;
   }
   const data = JSON.stringify(results);
-  fs.writeFileSync('./src/Data/data.js', data, 'utf-8');
+  const code = `const data = ${data};\n\nexport default data;`;
+  fs.writeFileSync('./src/Data/data.js', code, 'utf-8');
 });
 
 connection.query('SELECT * FROM review', (error, results) => {
@@ -32,7 +33,8 @@ connection.query('SELECT * FROM review', (error, results) => {
     return;
   }
   const data = JSON.stringify(results);
-  fs.writeFileSync('./src/Data/comment.js', data, 'utf-8');
+  const code = `const comment = ${data};\n\nexport default comment;`;
+  fs.writeFileSync('./src/Data/comment.js', code, 'utf-8');
 });
 
 connection.query('SELECT * FROM user', (error, results) => {
@@ -40,8 +42,12 @@ connection.query('SELECT * FROM user', (error, results) => {
     console.error('Error executing the query:', error);
     return;
   }
+
+  // Генерация оператора присваивания или вызова функции
   const data = JSON.stringify(results);
-  fs.writeFileSync('./src/Data/users.js', data, 'utf-8');
+  const code = `const users = ${data};\n\nexport default users;`;
+
+  fs.writeFileSync('./src/Data/users.js', code, 'utf-8');
 });
 
 // Закрытие соединения с базой данных

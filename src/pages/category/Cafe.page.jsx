@@ -12,7 +12,7 @@ export default class Cafe extends Component {
         {filteredData.map((data, index) => (
           <PlaceBlock
             key={index}
-            img={data.image}
+            image={data.image}
             title={data.title}
             type={data.type}
             text={data.text}

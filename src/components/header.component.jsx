@@ -22,10 +22,6 @@ function Header() {
                         <Nav.Link href="/allplace">Все заведения</Nav.Link>
                         <Nav.Link href="/recomend">Рекомендуемые</Nav.Link>
                         <Nav.Link href="/jurnal">Журнал</Nav.Link>
-                        <NavDropdown title="Кухня" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#cafe">Кафе</NavDropdown.Item>
-                            <NavDropdown.Item href="#restoran">Ресторан</NavDropdown.Item>
-                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
