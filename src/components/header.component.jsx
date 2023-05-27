@@ -1,8 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
 
 function Header() {
     return (
@@ -20,7 +18,7 @@ function Header() {
                     >
                         <Nav.Link href="/">Главное</Nav.Link>
                         <Nav.Link href="/allplace">Все заведения</Nav.Link>
-                        <Nav.Link href="/recomend">Рекомендуемые</Nav.Link>
+                        <Nav.Link href="/recommend">Рекомендуемые</Nav.Link>
                         <Nav.Link href="/jurnal">Журнал</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/header.component';
 import Main from './pages/main.page';
+import Recommend from './pages/Recommend.page';
 import NewPlace from './pages/newPlace.page';
 import Footer from './components/footer.component';
 
@@ -22,7 +23,6 @@ import Bar from './pages/category/Bar.page';
 import Stolovka from './pages/category/Stolovka.page';
 
 
-
 function App() {
   return (
     <div className="App">
@@ -32,6 +32,7 @@ function App() {
             <Route exact path='/' element={<Main/>}/>
             <Route exact path='/jurnal' element={<JurnalPage/>}/>
             <Route exact path="/allplace" element={<NewPlace />} />
+            <Route exact path="/recommend" element={<Recommend />} />
 
             <Route exact path="/Restouran" element={<Restouran />} />
             <Route exact path="/Pab" element={<Pab />} />
