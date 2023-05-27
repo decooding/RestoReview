@@ -1,0 +1,12 @@
+/* JurnalContainer.css */
+
+.link {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: black; /* Задаем цвет текста ссылок */
+    align-items: center; /* Выравнивание по вертикали */
+    margin-left: 25px;
+  }
+  .container-jurnal{
+    display:flex; /* Устанавливаем режим блочно-строчного элемента для ссылок */
+
+  }
