@@ -9,6 +9,7 @@ export default class Cafe extends Component {
 
     return (
       <Container>
+        <h1>Пока что нету таких заведений :(</h1>
         {filteredData.map((data, index) => (
           <PlaceBlock
             key={index}

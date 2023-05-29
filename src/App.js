@@ -19,7 +19,7 @@ import Karaoke from './pages/category/Karaoke.page';
 import Cafe from './pages/category/Cafe.page';
 import FastFood from './pages/category/FastFood.page';
 import Coffee from './pages/category/Coffee.page';
-import Bar from './pages/category/Bar.page';
+import Sushi from './pages/category/Sushi.page';
 import Stolovka from './pages/category/Stolovka.page';
 
 
@@ -38,8 +38,8 @@ function App() {
             <Route exact path="/Pab" element={<Pab />} />
             <Route exact path="/Karaoke" element={<Karaoke />} />
             <Route exact path="/FastFood" element={<FastFood />} />
-            <Route exact path="/Coffee" element={<Coffee />} />
-            <Route exact path="/Bar" element={<Bar />} />
+            <Route exact path="/coffe" element={<Coffee />} />
+            <Route exact path="/Sushi" element={<Sushi />} />
             <Route exact path="/Stolovka" element={<Stolovka />} />
             <Route exact path="/Cafe" element={<Cafe />} />
 

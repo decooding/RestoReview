@@ -5,14 +5,14 @@ import { Container } from 'react-bootstrap';
 
 export default class Cafe extends Component {
   render() {
-    const filteredData = cardsData.filter((data) => data.type === 'Кофейния');
+    const filteredData = cardsData.filter((data) => data.type === 'Кофейня');
 
     return (
       <Container>
         {filteredData.map((data, index) => (
           <PlaceBlock
             key={index}
-            img={data.image}
+            image={data.image}
             title={data.title}
             type={data.type}
             text={data.text}

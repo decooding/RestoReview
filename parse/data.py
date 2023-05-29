@@ -1,10 +1,11 @@
 import os
 import requests
 import json
+import random
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-url = "https://astana.restolife.kz/?filter=1"
+url = "https://astana.restolife.kz/page-2/?sorting=1&filter=1"
 
 response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
@@ -36,7 +37,13 @@ for item in cat_items:
     if photo_link is not None:
         relative_path = photo_link["style"].split("url(")[-1].split(")")[0]
         absolute_path = urljoin(url, relative_path)
-        data["photo_url"] = absolute_path
+        data["image"] = absolute_path
+
+    num_stars = random.randint(1, 5)
+    randStar = "⭐️" * num_stars
+    data["Rating"] = randStar
+
+    data["text"] = 'Приглашаем вас отведать изысканные блюда и насладиться атмосферой уюта в нашем ресторане/баре/кафе. Наше меню порадует вас разнообразием кулинарных шедевров, приготовленных из свежих и качественных ингредиентов. Наш внимательный персонал готов сделать ваше посещение незабываемым и удовлетворить самые изысканные вкусы. Приходите и насладитесь неповторимым гастрономическим опытом в нашем заведении.'
 
     data_list.append(data)
 
