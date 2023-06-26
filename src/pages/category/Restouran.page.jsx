@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import cardsData from '../Data/data';
+import cardsData from '../../Data/data';
 import PlaceBlock from '../../components/placeBlock.component';
 import { Container } from 'react-bootstrap';
 
@@ -12,7 +12,7 @@ export default class Restouran extends Component {
         {filteredData.map((data, index) => (
           <PlaceBlock
             key={index}
-            img={data.image}
+            image={data.image}
             title={data.title}
             type={data.type}
             text={data.text}

@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 
 export default class Cafe extends Component {
   render() {
-    const filteredData = cardsData.filter((data) => data.type === 'Бары/Пабы');
+    const filteredData = cardsData.filter((data) => data.type === 'Бар/паб');
 
     return (
       <Container>

@@ -9,7 +9,7 @@ export default class MainCategory extends Component {
         <Container>
           <Row>
             <a style={{ color:'#000', textDecoration: 'none' }} className='col' href="/restouran"><GridCard value="Рестораны" img="https://avatars.mds.yandex.net/i?id=8349f9e1168ac0109b0c421470b4f17fcfd54c58-5236318-images-thumbs&n=13"/></a>
-            <a style={{ color:'#000', textDecoration: 'none' }} className='col' href="/bar"><GridCard value="Бары/Пабы" img="https://avatars.mds.yandex.net/i?id=eeb01ae322680c488dbbd77bdcb12ce463dc01d0-5917291-images-thumbs&n=13" /></a>
+            <a style={{ color:'#000', textDecoration: 'none' }} className='col' href="/Pab"><GridCard value="Бары/Пабы" img="https://avatars.mds.yandex.net/i?id=eeb01ae322680c488dbbd77bdcb12ce463dc01d0-5917291-images-thumbs&n=13" /></a>
             <a style={{ color:'#000', textDecoration: 'none' }} className='col' href="/karaoke"><GridCard value="Караоке" img="https://avatars.mds.yandex.net/i?id=f54f00302b77493b1c3a147b4a4dc19335381d88-8496968-images-thumbs&n=13" /></a>
             <a style={{ color:'#000', textDecoration: 'none' }} className='col' href="/cafe"><GridCard value="Кафе" img="https://avatars.mds.yandex.net/i?id=6bcb632acae65b15d5acc7dc6865d6ca15242fe5-9262149-images-thumbs&n=13"/></a>
           </Row>

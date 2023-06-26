@@ -13,7 +13,7 @@ import JurnalPage from './pages/Jurnal.page';
 import JurnalSoup from './components/jurnal/JurnalSoup.page';
 import JurnalLepesh from './components/jurnal/JurnalLepesh.page';
 
-import Restouran from './pages/category/Cafe.page';
+import Restouran from './pages/category/Restouran.page';
 import Pab from './pages/category/Pab.page';
 import Karaoke from './pages/category/Karaoke.page';
 import Cafe from './pages/category/Cafe.page';
@@ -34,7 +34,7 @@ function App() {
             <Route exact path="/allplace" element={<NewPlace />} />
             <Route exact path="/recommend" element={<Recommend />} />
 
-            <Route exact path="/Restouran" element={<Restouran />} />
+            <Route exact path="/restouran" element={<Restouran />} />
             <Route exact path="/Pab" element={<Pab />} />
             <Route exact path="/Karaoke" element={<Karaoke />} />
             <Route exact path="/FastFood" element={<FastFood />} />
